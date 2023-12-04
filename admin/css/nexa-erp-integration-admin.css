@@ -1,0 +1,100 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.pull-right {
+  display: inline-block;
+  float: right;
+}
+
+.pull-left {
+  display: inline-block;
+  float: left;
+}
+
+.d-block {
+  display: block;
+}
+
+.spinner-custom {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-custom-e04l1k 1s infinite linear;
+  position: relative;
+  bottom: 104px;
+  left: 255px;
+}
+
+.spinner-custom::before,
+.spinner-custom::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner-custom::before {
+  border-color: #332884 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner-custom::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-custom-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.buttons-column {
+  align-items: center;
+  display: flex;
+}
+
+.wp-core-ui .button-primary {
+  background: #332884;
+  border-color: #332884;
+  color: #fff;
+  width: 220px;
+  text-decoration: none;
+  text-shadow: none;
+  min-width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #332884;
+}
+
+.wp-core-ui .button-primary:hover {
+  transform: scale(1.05);
+  outline: 2px solid #661b77;
+  background-color: #661b77;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.wp-core-ui .button-primary:focus {
+  transform: scale(1.05);
+  outline: 2px solid #661b77;
+  background-color: #661b77;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.wrap {
+  margin: 30px 0px;
+}
+
+#input-datetime-local {
+  margin-left: 30px;
+}
